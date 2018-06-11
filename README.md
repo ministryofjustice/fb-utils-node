@@ -40,6 +40,19 @@ To create a deep copy, pass
 const deeplyClonedObj = FBUtils.clone(obj, true)
 ```
 
+### FBError
+
+Base class for errors
+
+``` js
+class MyError extends FBError {}
+
+throw new MyError('An error occurred', {
+  data: additionalData
+})
+
+```
+
 
 ## Testing
 
