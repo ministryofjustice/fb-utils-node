@@ -4,13 +4,13 @@ Form Builder utility methods
 
 ## Installing
 
-``` shell
+```sh
 npm install @ministryofjustice/fb-utils-node
 ```
 
 ## Usage
 
-``` js
+```js
 const FBUtils = require('@ministryofjustice/fb-utils-node')
 ```
 
@@ -18,7 +18,7 @@ const FBUtils = require('@ministryofjustice/fb-utils-node')
 
 ### logger
 
-``` js
+```js
 FBUtils.logger(...args)
 ```
 
@@ -26,7 +26,7 @@ FBUtils.logger(...args)
 
 Returns a shallow copy of any object
 
-``` js
+```js
 const clonedObj = FBUtils.clone(obj)
 ```
 
@@ -34,9 +34,9 @@ Objects can be of any type.
 
 By default, the object copy is shallow.
 
-To create a deep copy, pass 
+To create a deep copy, pass `true`:
 
-``` js
+```js
 const deeplyClonedObj = FBUtils.clone(obj, true)
 ```
 
@@ -44,7 +44,7 @@ const deeplyClonedObj = FBUtils.clone(obj, true)
 
 Base class for errors
 
-``` js
+```js
 class MyError extends FBError {}
 
 throw new MyError('An error occurred', {
@@ -56,19 +56,19 @@ throw new MyError('An error occurred', {
 
 ## Testing
 
-``` shell
+```sh
 npm test
 # Test output is in [TAP](https://testanything.org/) format
 ```
 
 Run unit tests only
 
-``` shell
+```sh
 npm run test:unit
 ```
 
 Run linting only
 
-``` shell
+```sh
 npm run lint
 ```
