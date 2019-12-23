@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "sinon": "^7.5.0"
+    "sinon": "^8.0.0"
   },
   "devDependencies": {
     "@ministryofjustice/eslint-config-fb": "^1.1.4",
